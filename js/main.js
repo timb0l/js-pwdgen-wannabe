@@ -17,16 +17,18 @@ let Color = prompt("Insert your favorite color:");
 let Number1 = parseInt(prompt("Insert first number:"));
 let Number2 = parseInt(prompt("Insert second number:"));
 
-let sumNumber = Number1 / Number2;
-let userPassword = Name + Surname + Color + sumNumber;
+let sumNumber1 = Number1 / Number2;
+let sumNumber2 = Number1 * Number2;
+let userPassword = sumNumber1 +Name + Surname + Color + sumNumber2;
 
 console.log(
 `
 -Name: ${Name}
 -Surname: ${Surname}
 -Color: ${Color}
--Numbers: ${sumNumber}
--userPassword: ${Name+Surname+Color+sumNumber}
+-Number1: ${sumNumber1}
+-Number2: ${sumNumber2}
+-userPassword: ${sumNumber1+Name+Surname+Color+sumNumber2}
 `);
 
 
