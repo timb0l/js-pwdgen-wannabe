@@ -18,7 +18,7 @@ let Number1 = parseInt(prompt("Insert first number:"));
 let Number2 = parseInt(prompt("Insert second number:"));
 
 let sumNumber = Number1 / Number2;
-let password = Name + Surname + Color + sumNumber;
+let userPassword = Name + Surname + Color + sumNumber;
 
 console.log(
 `
@@ -26,9 +26,10 @@ console.log(
 -Surname: ${Surname}
 -Color: ${Color}
 -Numbers: ${sumNumber}
+-userPassword: ${Name+Surname+Color+sumNumber}
 `);
 
 
 //html Id
 
-document.getElementById(password).innerHTML = password
+document.getElementById("userPassword").innerHTML = userPassword;
